@@ -1,0 +1,257 @@
+/*! ------------------------------------------------
+ * Project Name: Name: Inaamajay
+ * Project Description: Inaamajay - bright and clean coming soon and landing page template to kick-start your project
+ * Tags: mix_design, coming soon, under construction, template, landing page, portfolio, one page, responsive, html5, css3, creative, clean, agency, personal page
+ * Version: 1.0.0
+ * Build Date: November 2023
+ * Last Update: November 2023
+ * This product is available exclusively on Themeforest
+ * Author: mix_design
+ * Author URI: https://themeforest.net/user/mix_design */
+/*! File name: loader.css
+ * ------------------------------------------------
+ *
+ * ------------------------------------------------
+ * Table of Contents
+ * ------------------------------------------------
+ *  1. Loader Styles
+ * ------------------------------------------------
+ * Table of Contents End
+ * ------------------------------------------------ */
+:root {
+  --_size: 2rem;
+  --_radius-s: 2rem;
+  --_radius-m: 3rem;
+  --_radius-l: 5rem;
+  --_animspeed-fast: 0.1s;
+  --_animspeed-medium: 0.3s;
+  --_animspeed-slow: 0.6s;
+  --_animbezier: cubic-bezier(0.23, 0.65, 0.74, 1.09);
+  /* light color scheme */
+  --base--light: #e1e1e6;
+  --base-inner--light: #d5d5e0;
+  --accent--light: #32527b;
+  --accent-rgb--light: 77, 38, 179;
+  --secondary--light: #FF9B70;
+  --deviders--light: #8a8793;
+  --strokes--light: #b3b3c4;
+  --hover-fill--light: #ffffff;
+  --transparent-bg--light: rgba(9, 5, 22, 0.9);
+  --t-bright--light: #111111;
+  --t-default--light: #2b2b2b;
+  --t-muted--light: #4c4c4c;
+  --t-muted-rgb--light: 76, 76, 76;
+  --t-placeholders--light: #7b7a82;
+  --t-opp-bright--light: #ffffff;
+  --t-opp-default--light: #f2f2f2;
+  --t-opp-muted--light: #c2bfd1;
+  /* dark color scheme */
+  --base--dark: #090516;
+  --base-inner--dark: #121226;
+  --accent--dark: #6b57ff;
+  --accent-rgb--dark: 107, 87, 255;
+  --secondary--dark: #FF9B70;
+  --deviders--dark: #3a3745;
+  --strokes--dark: #565560;
+  --hover-fill--dark: #262235;
+  --transparent-bg--dark: rgba(9, 5, 22, 0.3);
+  --t-bright--dark: #ffffff;
+  --t-default--dark: #f2f2f2;
+  --t-muted--dark: #c2bfd1;
+  --t-muted-rgb--dark: 194, 191, 209;
+  --t-placeholders--dark: #838093;
+  --t-opp-bright--dark: #111111;
+  --t-opp-default--dark: #2b2b2b;
+  --t-opp-muted--dark: #4c4c4c;
+  /* permanent colors */
+  --per-base: #130e28;
+  --per-base-rgb: 19, 14, 40;
+  --t-per-bright-light: #ffffff;
+  --t-per-bright-light-rgb: 255, 255, 255;
+  --t-per-default-light: #f2f2f2;
+  --t-per-muted-light: #c2bfd1;
+  --t-per-bright-dark: #111111;
+  --t-per-default-dark: #2b2b2b;
+  --t-per-muted-dark: #4c4c4c;
+}
+
+/* defaults */
+@media (prefers-color-scheme: light) {
+  :root {
+    --base: var(--base--light);
+    --base-inner: var(--base-inner--light);
+    --accent: var(--accent--light);
+    --accent-rgb: var(--accent-rgb--light);
+    --secondary: var(--secondary--light);
+    --deviders: var(--deviders--light);
+    --strokes: var(--strokes--light);
+    --hover-fill: var(--hover-fill--light);
+    --transparent-bg: var(--transparent-bg--light);
+    --t-bright: var(--t-bright--light);
+    --t-default: var(--t-default--light);
+    --t-muted: var(--t-muted--light);
+    --t-muted-rgb: var(--t-muted-rgb--light);
+    --t-placeholders: var(--t-placeholders--light);
+    --t-opp-bright: var(--t-opp-bright--light);
+    --t-opp-default: var(--t-opp-default--light);
+    --t-opp-muted: var(--t-opp-muted--light);
+    color-scheme: light;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --base: var(--base--dark);
+    --base-inner: var(--base-inner--dark);
+    --accent: var(--accent--dark);
+    --accent-rgb: var(--accent-rgb--dark);
+    --secondary: var(--secondary--dark);
+    --deviders: var(--deviders--dark);
+    --strokes: var(--strokes--dark);
+    --hover-fill: var(--hover-fill--dark);
+    --transparent-bg: var(--transparent-bg--dark);
+    --t-bright: var(--t-bright--dark);
+    --t-default: var(--t-default--dark);
+    --t-muted: var(--t-muted--dark);
+    --t-muted-rgb: var(--t-muted-rgb--dark);
+    --t-placeholders: var(--t-placeholders--dark);
+    --t-opp-bright: var(--t-opp-bright--dark);
+    --t-opp-default: var(--t-opp-default--dark);
+    --t-opp-muted: var(--t-opp-muted--dark);
+    color-scheme: dark;
+  }
+}
+[color-scheme=light] {
+  --base: var(--base--light);
+  --base-inner: var(--base-inner--light);
+  --accent: var(--accent--light);
+  --accent-rgb: var(--accent-rgb--light);
+  --secondary: var(--secondary--light);
+  --deviders: var(--deviders--light);
+  --strokes: var(--strokes--light);
+  --hover-fill: var(--hover-fill--light);
+  --transparent-bg: var(--transparent-bg--light);
+  --t-bright: var(--t-bright--light);
+  --t-default: var(--t-default--light);
+  --t-muted: var(--t-muted--light);
+  --t-muted-rgb: var(--t-muted-rgb--light);
+  --t-placeholders: var(--t-placeholders--light);
+  --t-opp-bright: var(--t-opp-bright--light);
+  --t-opp-default: var(--t-opp-default--light);
+  --t-opp-muted: var(--t-opp-muted--light);
+}
+
+[color-scheme=dark] {
+  --base: var(--base--dark);
+  --base-inner: var(--base-inner--dark);
+  --accent: var(--accent--dark);
+  --accent-rgb: var(--accent-rgb--dark);
+  --secondary: var(--secondary--dark);
+  --deviders: var(--deviders--dark);
+  --strokes: var(--strokes--dark);
+  --hover-fill: var(--hover-fill--dark);
+  --transparent-bg: var(--transparent-bg--dark);
+  --t-bright: var(--t-bright--dark);
+  --t-default: var(--t-default--dark);
+  --t-muted: var(--t-muted--dark);
+  --t-muted-rgb: var(--t-muted-rgb--dark);
+  --t-placeholders: var(--t-placeholders--dark);
+  --t-opp-bright: var(--t-opp-bright--dark);
+  --t-opp-default: var(--t-opp-default--dark);
+  --t-opp-muted: var(--t-opp-muted--dark);
+}
+
+/* ------------------------------------------------*/
+/* Loader Styles Start */
+/* ------------------------------------------------*/
+.loader {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: var(--base);
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.loader.loaded {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader__content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+     -moz-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+
+.loader__logo {
+  width: 100px;
+}
+.loader__logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@-webkit-keyframes scaleOut {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale3d(1.14, 1.14, 1.14);
+            transform: scale3d(1.14, 1.14, 1.14);
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes scaleOut {
+  from {
+    -moz-transform: scale3d(1, 1, 1);
+         transform: scale3d(1, 1, 1);
+    opacity: 1;
+  }
+  to {
+    -moz-transform: scale3d(1.14, 1.14, 1.14);
+         transform: scale3d(1.14, 1.14, 1.14);
+    opacity: 0;
+  }
+}
+
+@keyframes scaleOut {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+       -moz-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale3d(1.14, 1.14, 1.14);
+       -moz-transform: scale3d(1.14, 1.14, 1.14);
+            transform: scale3d(1.14, 1.14, 1.14);
+    opacity: 0;
+  }
+}
+.scaleOut {
+  -webkit-animation: scaleOut 0.3s 1;
+     -moz-animation: scaleOut 0.3s 1;
+          animation: scaleOut 0.3s 1;
+  -webkit-animation-fill-mode: both;
+     -moz-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+/* ------------------------------------------------*/
+/* Loader Styles End */
+/* ------------------------------------------------*/
